@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Poppins&display=swap");
+* {
+  background-color: rgb(4, 0, 14) !important;
+  color: white !important;
+  font-family: "Playpen Sans", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  margin-left: 750px !important;
+}
+
+.mr-8:hover {
+  border-radius: 10px;
+  border: solid 1px grey;
+  padding: 5px;
+  background-color: rgb(4, 0, 14) !important;
+  font-weight: bold;
+  color: white;
+}
+
+.button {
+  background-color: white !important;
+  width: 200px !important;
+  color: black !important;
+}

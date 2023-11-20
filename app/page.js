@@ -172,7 +172,7 @@ export default function Home() {
                   className="container flex justify-between p-3 my-1"
                 >
                   <span className="slug">{item.slug} (₹{item.price})</span>
-                  <div>
+                  <div className="add-sub">
                   <span onClick={() => {buttonAction("plus", item.slug, item.quantity)}} disabled={loadingAction} className="add px-2 rounded-sm bg-red-500 text-white cursor-pointer disabled:bg-red-300">+</span>
                   <span className="quantity px-2 bg-white">{item.quantity}</span>
                   <span onClick={() => {buttonAction("minus", item.slug, item.quantity)}} disabled={loadingAction} className="sub px-2 rounded-sm bg-red-500 text-white cursor-pointer disabled:bg-red-300">-</span>
@@ -249,7 +249,7 @@ export default function Home() {
             <button
               onClick={addProduct}
               type="submit"
-              className="bg-red-500 text-white rounded-md py-2 px-4 hover:bg-red-600 transition duration-300"
+              className="button bg-red-500 text-white rounded-md py-2 px-4 hover:bg-red-600 transition duration-300"
             >
               Add Product
             </button>
